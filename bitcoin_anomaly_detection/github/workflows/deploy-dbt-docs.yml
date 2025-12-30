@@ -1,0 +1,45 @@
+name: Deploy dbt Docs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Roda toda vez que der push no main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dbt dependencies
+        run: |
+          pip install dbt-core dbt-bigquery
+
+      - name: Generate dbt docs
+        env:
+          # Usa autenticação OAuth (funciona pro Sandbox sem secrets extras)
+          GOOGLE_APPLICATION_CREDENTIALS: none
+        run: dbt docs generate
+
+      - name: Add .nojekyll (bypass Jekyll errors)
+        run: touch target/.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./target
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
