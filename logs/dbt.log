@@ -1,29 +1,1443 @@
-[0m14:07:41.704914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027043D4ECF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027045ED7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027045ED7C50>]}
+[0m14:13:12.508494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA06A92CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA08C1BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA08C1BC50>]}
 
 
-============================== 14:07:41.713537 | 5ea69763-4681-487d-a70f-cfbf73cad1a0 ==============================
-[0m14:07:41.713537 [info ] [MainThread]: Running with dbt=1.11.0-rc3
-[0m14:07:41.714569 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'profiles_dir': 'C:\\Users\\Microsoft\\.dbt', 'invocation_command': 'dbt init bitcoin_anomaly_detection', 'write_json': 'True', 'no_print': 'None', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None'}
-[0m14:07:41.770213 [debug] [MainThread]: Starter project path: C:\Users\Microsoft\anaconda3\Lib\site-packages\dbt\include\starter_project
-[0m14:07:41.810399 [info ] [MainThread]: 
-Your new dbt project "bitcoin_anomaly_detection" was created!
+============================== 14:13:12.515146 | 628672d6-5a21-4c7e-9a21-d285867c3f11 ==============================
+[0m14:13:12.515146 [info ] [MainThread]: Running with dbt=1.11.0-rc3
+[0m14:13:12.516106 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'log_format': 'default', 'write_json': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': 'C:\\Users\\Microsoft\\Desktop\\Projects\\Python Projects\\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\\bitcoin_anomaly_detection\\logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Microsoft\\.dbt', 'invocation_command': 'dbt run --models stg_transactions', 'printer_width': '80', 'target_path': 'None'}
+[0m14:13:12.517011 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m14:13:12.517755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '628672d6-5a21-4c7e-9a21-d285867c3f11', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA08B2AB10>]}
+[0m14:13:26.131307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '628672d6-5a21-4c7e-9a21-d285867c3f11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA0754E250>]}
+[0m14:13:26.282771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '628672d6-5a21-4c7e-9a21-d285867c3f11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA08A95650>]}
+[0m14:13:26.283771 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m14:13:27.903515 [debug] [MainThread]: checksum: 0c6350755389a6ed721b17ac809f023d953b5a3e5903ed71b682e7badc0c55b0, vars: {}, profile: , target: , version: 1.11.0rc3
+[0m14:13:27.906227 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:13:27.907297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '628672d6-5a21-4c7e-9a21-d285867c3f11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA1E381D60>]}
+[0m14:13:30.757464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '628672d6-5a21-4c7e-9a21-d285867c3f11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA1FB77850>]}
+[0m14:13:30.911943 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:13:30.917498 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:13:30.961472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '628672d6-5a21-4c7e-9a21-d285867c3f11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA1FEF0120>]}
+[0m14:13:30.962200 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 495 macros
+[0m14:13:30.962956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '628672d6-5a21-4c7e-9a21-d285867c3f11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA1FDA1C10>]}
+[0m14:13:30.967244 [info ] [MainThread]: 
+[0m14:13:30.968008 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:13:30.969016 [info ] [MainThread]: 
+[0m14:13:30.972183 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:13:30.974339 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bitcoin-anomaly-portfolio'
+[0m14:13:30.975741 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:14:20.677230 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin'
+[0m14:14:20.678092 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:14:42.106197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '628672d6-5a21-4c7e-9a21-d285867c3f11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA1FE5EA40>]}
+[0m14:14:42.107138 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:14:42.118549 [debug] [Thread-1 (]: Began running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:14:42.119782 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_bitcoin.stg_transactions ....................... [RUN]
+[0m14:14:42.121000 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.stg_transactions'
+[0m14:14:42.121705 [debug] [Thread-1 (]: Began compiling node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:14:42.138368 [debug] [Thread-1 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.stg_transactions"
+[0m14:14:42.143300 [debug] [Thread-1 (]: Began executing node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:14:42.203531 [debug] [Thread-1 (]: Writing runtime sql for node "model.bitcoin_anomaly_detection.stg_transactions"
+[0m14:14:42.208818 [debug] [Thread-1 (]: On model.bitcoin_anomaly_detection.stg_transactions: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "node_id": "model.bitcoin_anomaly_detection.stg_transactions"} */
 
-For more information on how to configure the profiles.yml file,
-please consult the dbt documentation here:
 
-  https://docs.getdbt.com/docs/configure-your-profile
+  create or replace view `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`stg_transactions`
+  OPTIONS()
+  as   -- View para não ocupar storage no Sandbox
 
-One more thing:
+WITH base AS (
+  SELECT
+    -- Chave única da transação
+    hash AS transaction_hash,
 
-Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+    -- Timestamp e data
+    block_timestamp,
+    DATE(block_timestamp) AS transaction_date,
 
-  https://community.getdbt.com/
+    -- Valores em BTC (convertendo satoshis)
+    SAFE_DIVIDE(input_value, 100000000) AS input_btc,
+    SAFE_DIVIDE(output_value, 100000000) AS output_btc,
+    SAFE_DIVIDE(fee, 100000000) AS fee_btc,
 
-Happy modeling!
+    -- Contagens
+    input_count,
+    output_count,
 
-[0m14:07:41.811216 [info ] [MainThread]: Setting up your profile.
-[0m14:09:41.762446 [info ] [MainThread]: Profile bitcoin_anomaly_detection written to C:\Users\Microsoft\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
-[0m14:09:41.769119 [debug] [MainThread]: Command `dbt init` succeeded at 14:09:41.766501 after 120.30 seconds
-[0m14:09:41.769902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002705573C510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002705B6EB530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027043B8A360>]}
-[0m14:09:41.771312 [debug] [MainThread]: Flushing usage events
-[0m14:09:42.465784 [debug] [MainThread]: An error was encountered while trying to flush usage events
+    -- Indicador de coinbase (recompensa de mineração)
+    is_coinbase
+
+  FROM `bigquery-public-data`.`crypto_bitcoin`.`transactions`
+
+  -- Filtra apenas dados recentes para não explodir custos 
+  WHERE block_timestamp >= '2023-01-01'
+)
+
+SELECT *
+FROM base
+
+-- Comentários finais:
+-- Esse model limpa e converte unidades para BTC.
+-- Usamos view para economizar storage no Sandbox.
+-- Adicionamos filtro de data para queries rápidas e baratas.;
+
+
+[0m14:14:42.210150 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:15:03.846549 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:8e4664d5-fda3-4884-b4b2-cdce2d2bdc4f&page=queryresults
+[0m14:15:03.847679 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:8e4664d5-fda3-4884-b4b2-cdce2d2bdc4f&page=queryresults
+[0m14:15:03.875766 [debug] [Thread-1 (]: Database Error in model stg_transactions (models\staging\stg_transactions.sql)
+  Syntax error: Unexpected keyword HASH at [11:5]
+  compiled code at target\run\bitcoin_anomaly_detection\models\staging\stg_transactions.sql
+[0m14:15:03.879581 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '628672d6-5a21-4c7e-9a21-d285867c3f11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA06F3F070>]}
+[0m14:15:03.880749 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model dbt_bitcoin.stg_transactions .............. [[31mERROR[0m in 21.76s]
+[0m14:15:03.882131 [debug] [Thread-1 (]: Finished running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:15:03.883290 [debug] [Thread-7 (]: Marking all children of 'model.bitcoin_anomaly_detection.stg_transactions' to be skipped because of status 'error'.  Reason: Database Error in model stg_transactions (models\staging\stg_transactions.sql)
+  Syntax error: Unexpected keyword HASH at [11:5]
+  compiled code at target\run\bitcoin_anomaly_detection\models\staging\stg_transactions.sql.
+[0m14:15:03.886696 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:15:03.887996 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:15:03.888615 [debug] [MainThread]: Connection 'list_bitcoin-anomaly-portfolio' was properly closed.
+[0m14:15:03.889097 [debug] [MainThread]: Connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin' was properly closed.
+[0m14:15:03.889591 [debug] [MainThread]: Connection 'model.bitcoin_anomaly_detection.stg_transactions' was properly closed.
+[0m14:15:03.890318 [info ] [MainThread]: 
+[0m14:15:03.891102 [info ] [MainThread]: Finished running 1 view model in 0 hours 1 minutes and 32.92 seconds (92.92s).
+[0m14:15:03.892423 [debug] [MainThread]: Command end result
+[0m14:15:03.940979 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:15:03.946219 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:15:03.959797 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\run_results.json
+[0m14:15:03.960421 [info ] [MainThread]: 
+[0m14:15:03.961173 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:15:03.961855 [info ] [MainThread]: 
+[0m14:15:03.962660 [error] [MainThread]: [31mFailure in model stg_transactions (models\staging\stg_transactions.sql)[0m
+[0m14:15:03.963511 [error] [MainThread]:   Database Error in model stg_transactions (models\staging\stg_transactions.sql)
+  Syntax error: Unexpected keyword HASH at [11:5]
+  compiled code at target\run\bitcoin_anomaly_detection\models\staging\stg_transactions.sql
+[0m14:15:03.964345 [info ] [MainThread]: 
+[0m14:15:03.966213 [info ] [MainThread]:   compiled code at target\compiled\bitcoin_anomaly_detection\models\staging\stg_transactions.sql
+[0m14:15:03.967342 [info ] [MainThread]: 
+[0m14:15:03.968425 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:15:03.970089 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m14:15:03.972191 [debug] [MainThread]: Command `dbt run` failed at 14:15:03.971957 after 111.78 seconds
+[0m14:15:03.972859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA1FDAC650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA1FE67AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CA08C81470>]}
+[0m14:15:03.973547 [debug] [MainThread]: Flushing usage events
+[0m14:15:04.661630 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:17:09.084710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE209C2CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE22B4BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE22B4BC50>]}
+
+
+============================== 14:17:09.090980 | 31aba736-e308-40e7-87c5-c589cf943bed ==============================
+[0m14:17:09.090980 [info ] [MainThread]: Running with dbt=1.11.0-rc3
+[0m14:17:09.091841 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'invocation_command': 'dbt run --models stg_transactions', 'profiles_dir': 'C:\\Users\\Microsoft\\.dbt', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'log_path': 'C:\\Users\\Microsoft\\Desktop\\Projects\\Python Projects\\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\\bitcoin_anomaly_detection\\logs', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m14:17:09.092446 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m14:17:09.093096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '31aba736-e308-40e7-87c5-c589cf943bed', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE22A5AB10>]}
+[0m14:17:22.897510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '31aba736-e308-40e7-87c5-c589cf943bed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE2147E250>]}
+[0m14:17:23.050506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '31aba736-e308-40e7-87c5-c589cf943bed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE229C5650>]}
+[0m14:17:23.051484 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m14:17:24.732752 [debug] [MainThread]: checksum: 0c6350755389a6ed721b17ac809f023d953b5a3e5903ed71b682e7badc0c55b0, vars: {}, profile: , target: , version: 1.11.0rc3
+[0m14:17:25.143960 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:17:25.144798 [debug] [MainThread]: Partial parsing: updated file: bitcoin_anomaly_detection://models\staging\stg_transactions.sql
+[0m14:17:25.746212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '31aba736-e308-40e7-87c5-c589cf943bed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE39941E50>]}
+[0m14:17:25.908913 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:17:25.914627 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:17:25.954425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '31aba736-e308-40e7-87c5-c589cf943bed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE38425470>]}
+[0m14:17:25.955120 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 495 macros
+[0m14:17:25.955827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '31aba736-e308-40e7-87c5-c589cf943bed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE39B71710>]}
+[0m14:17:25.958870 [info ] [MainThread]: 
+[0m14:17:25.959581 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:17:25.960140 [info ] [MainThread]: 
+[0m14:17:25.961414 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:17:25.963466 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bitcoin-anomaly-portfolio'
+[0m14:17:25.964183 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:18:11.459872 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin'
+[0m14:18:11.460757 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:18:32.852635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '31aba736-e308-40e7-87c5-c589cf943bed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE3832E690>]}
+[0m14:18:32.853527 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:18:32.860440 [debug] [Thread-1 (]: Began running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:18:32.861555 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_bitcoin.stg_transactions ....................... [RUN]
+[0m14:18:32.862774 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.stg_transactions'
+[0m14:18:32.863577 [debug] [Thread-1 (]: Began compiling node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:18:32.875853 [debug] [Thread-1 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.stg_transactions"
+[0m14:18:32.878802 [debug] [Thread-1 (]: Began executing node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:18:32.939842 [debug] [Thread-1 (]: Writing runtime sql for node "model.bitcoin_anomaly_detection.stg_transactions"
+[0m14:18:32.942211 [debug] [Thread-1 (]: On model.bitcoin_anomaly_detection.stg_transactions: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "node_id": "model.bitcoin_anomaly_detection.stg_transactions"} */
+
+
+  create or replace view `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`stg_transactions`
+  OPTIONS()
+  as -- models/staging/stg_transactions.sql
+  -- View para economizar storage no Sandbox
+
+WITH base AS (
+  SELECT
+    -- Chave única da transação
+    hash AS transaction_hash, 
+
+    -- Timestamp e data
+    block_timestamp,
+    DATE(block_timestamp) AS transaction_date,
+
+    -- Valores em BTC (satoshis → BTC)
+    SAFE_DIVIDE(input_value, 100000000) AS input_btc,
+    SAFE_DIVIDE(output_value, 100000000) AS output_btc,
+    SAFE_DIVIDE(fee, 100000000) AS fee_btc,
+
+    -- Contagens de inputs/outputs
+    input_count,
+    output_count,
+
+    -- Se é coinbase (recompensa de mineração)
+    is_coinbase
+
+  FROM `bigquery-public-data`.`crypto_bitcoin`.`transactions`
+
+  -- Filtra dados recentes para queries baratas e rápidas (ajuste conforme necessidade)
+  WHERE block_timestamp >= '2022-01-01'  -- Mudei para 2022+ para menos dados no Sandbox
+)
+
+SELECT *
+FROM base
+
+-- Comentários:
+-- - Coluna 'hash' deve estar em lowercase para evitar conflito com função HASH().
+-- - Alternativa segura: ` `hash` AS transaction_hash ` (com backticks).
+-- - SAFE_DIVIDE evita divisão por zero (raro, mas seguro).
+-- - Filtro de data é essencial no Sandbox para não estourar limites.;
+
+
+[0m14:18:32.943320 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:18:54.542642 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:668f8675-4401-44ed-955e-8239c988c47a&page=queryresults
+[0m14:18:54.543694 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:668f8675-4401-44ed-955e-8239c988c47a&page=queryresults
+[0m14:18:54.563954 [debug] [Thread-1 (]: Database Error in model stg_transactions (models\staging\stg_transactions.sql)
+  Syntax error: Unexpected keyword HASH at [12:5]
+  compiled code at target\run\bitcoin_anomaly_detection\models\staging\stg_transactions.sql
+[0m14:18:54.568602 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '31aba736-e308-40e7-87c5-c589cf943bed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE39C11650>]}
+[0m14:18:54.569846 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model dbt_bitcoin.stg_transactions .............. [[31mERROR[0m in 21.70s]
+[0m14:18:54.571156 [debug] [Thread-1 (]: Finished running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:18:54.572133 [debug] [Thread-7 (]: Marking all children of 'model.bitcoin_anomaly_detection.stg_transactions' to be skipped because of status 'error'.  Reason: Database Error in model stg_transactions (models\staging\stg_transactions.sql)
+  Syntax error: Unexpected keyword HASH at [12:5]
+  compiled code at target\run\bitcoin_anomaly_detection\models\staging\stg_transactions.sql.
+[0m14:18:54.574977 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:18:54.575996 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:18:54.576563 [debug] [MainThread]: Connection 'list_bitcoin-anomaly-portfolio' was properly closed.
+[0m14:18:54.577024 [debug] [MainThread]: Connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin' was properly closed.
+[0m14:18:54.577748 [debug] [MainThread]: Connection 'model.bitcoin_anomaly_detection.stg_transactions' was properly closed.
+[0m14:18:54.578444 [info ] [MainThread]: 
+[0m14:18:54.579171 [info ] [MainThread]: Finished running 1 view model in 0 hours 1 minutes and 28.62 seconds (88.62s).
+[0m14:18:54.581075 [debug] [MainThread]: Command end result
+[0m14:18:54.629021 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:18:54.635002 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:18:54.646195 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\run_results.json
+[0m14:18:54.646908 [info ] [MainThread]: 
+[0m14:18:54.648223 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:18:54.649140 [info ] [MainThread]: 
+[0m14:18:54.650256 [error] [MainThread]: [31mFailure in model stg_transactions (models\staging\stg_transactions.sql)[0m
+[0m14:18:54.651152 [error] [MainThread]:   Database Error in model stg_transactions (models\staging\stg_transactions.sql)
+  Syntax error: Unexpected keyword HASH at [12:5]
+  compiled code at target\run\bitcoin_anomaly_detection\models\staging\stg_transactions.sql
+[0m14:18:54.651852 [info ] [MainThread]: 
+[0m14:18:54.652623 [info ] [MainThread]:   compiled code at target\compiled\bitcoin_anomaly_detection\models\staging\stg_transactions.sql
+[0m14:18:54.653248 [info ] [MainThread]: 
+[0m14:18:54.654275 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:18:54.655277 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m14:18:54.657384 [debug] [MainThread]: Command `dbt run` failed at 14:18:54.657148 after 105.85 seconds
+[0m14:18:54.658047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE39BF5270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE39C2C680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE215073D0>]}
+[0m14:18:54.658630 [debug] [MainThread]: Flushing usage events
+[0m14:18:55.373234 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:20:09.646411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC5C312CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC5E49BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC5E49BC50>]}
+
+
+============================== 14:20:09.652841 | c7c5597b-e12b-463e-b2ba-da29af70ce18 ==============================
+[0m14:20:09.652841 [info ] [MainThread]: Running with dbt=1.11.0-rc3
+[0m14:20:09.653875 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'log_format': 'default', 'no_print': 'None', 'target_path': 'None', 'invocation_command': 'dbt run --models stg_transactions', 'warn_error': 'None', 'log_path': 'C:\\Users\\Microsoft\\Desktop\\Projects\\Python Projects\\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\\bitcoin_anomaly_detection\\logs', 'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Microsoft\\.dbt', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m14:20:09.654522 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m14:20:09.655201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c7c5597b-e12b-463e-b2ba-da29af70ce18', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC5E3AAB10>]}
+[0m14:20:23.207729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c7c5597b-e12b-463e-b2ba-da29af70ce18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC5CDCE250>]}
+[0m14:20:23.376939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c7c5597b-e12b-463e-b2ba-da29af70ce18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC5E315650>]}
+[0m14:20:23.377950 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m14:20:25.002380 [debug] [MainThread]: checksum: 0c6350755389a6ed721b17ac809f023d953b5a3e5903ed71b682e7badc0c55b0, vars: {}, profile: , target: , version: 1.11.0rc3
+[0m14:20:25.410125 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:20:25.410973 [debug] [MainThread]: Partial parsing: updated file: bitcoin_anomaly_detection://models\staging\stg_transactions.sql
+[0m14:20:26.017651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c7c5597b-e12b-463e-b2ba-da29af70ce18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC75291E50>]}
+[0m14:20:26.180826 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:20:26.185981 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:20:26.225740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c7c5597b-e12b-463e-b2ba-da29af70ce18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC73D65470>]}
+[0m14:20:26.226573 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 495 macros
+[0m14:20:26.227297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c7c5597b-e12b-463e-b2ba-da29af70ce18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC754C1710>]}
+[0m14:20:26.230213 [info ] [MainThread]: 
+[0m14:20:26.230923 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:20:26.231484 [info ] [MainThread]: 
+[0m14:20:26.232329 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:20:26.234367 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bitcoin-anomaly-portfolio'
+[0m14:20:26.235327 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:21:11.602607 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin'
+[0m14:21:11.603456 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:21:32.960424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c7c5597b-e12b-463e-b2ba-da29af70ce18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC73C7E690>]}
+[0m14:21:32.961322 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:21:32.968467 [debug] [Thread-1 (]: Began running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:21:32.969745 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_bitcoin.stg_transactions ....................... [RUN]
+[0m14:21:32.971075 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.stg_transactions'
+[0m14:21:32.971906 [debug] [Thread-1 (]: Began compiling node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:21:32.988608 [debug] [Thread-1 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.stg_transactions"
+[0m14:21:32.992054 [debug] [Thread-1 (]: Began executing node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:21:33.051768 [debug] [Thread-1 (]: Writing runtime sql for node "model.bitcoin_anomaly_detection.stg_transactions"
+[0m14:21:33.054672 [debug] [Thread-1 (]: On model.bitcoin_anomaly_detection.stg_transactions: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "node_id": "model.bitcoin_anomaly_detection.stg_transactions"} */
+
+
+  create or replace view `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`stg_transactions`
+  OPTIONS()
+  as -- models/staging/stg_transactions.sql
+  -- View para não gastar storage no Sandbox
+
+WITH base AS (
+  SELECT
+    -- Chave única da transação: use backticks porque 'hash' é keyword reservada!
+    `hash` AS transaction_hash,
+
+    -- Timestamp e data
+    block_timestamp,
+    DATE(block_timestamp) AS transaction_date,
+
+    -- Valores em BTC (convertendo de satoshis)
+    SAFE_DIVIDE(input_value, 100000000) AS input_btc,
+    SAFE_DIVIDE(output_value, 100000000) AS output_btc,
+    SAFE_DIVIDE(fee, 100000000) AS fee_btc,
+
+    -- Contagens de inputs e outputs
+    input_count,
+    output_count,
+
+    -- Se é transação de mineração (coinbase)
+    is_coinbase
+
+  FROM `bigquery-public-data`.`crypto_bitcoin`.`transactions`
+
+  -- Filtra dados recentes para queries baratas e evitar limites do Sandbox
+  -- Ajuste a data se quiser mais/menos histórico (ex: '2023-01-01' para mais recente)
+  WHERE block_timestamp >= '2022-01-01'
+)
+
+SELECT *
+FROM base
+
+-- Comentários finais:
+-- - Os backticks (`hash`) resolvem o erro de "Unexpected keyword HASH".
+-- - Isso é comum em BigQuery com colunas que coincidem com funções reservadas.
+-- - SAFE_DIVIDE protege contra divisão por zero.
+-- - Filtro de data é crucial no Sandbox (mantém bytes processados baixos).;
+
+
+[0m14:21:33.055790 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:21:54.698240 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:8cb9c13d-7427-4d29-affc-d237c68e26b4&page=queryresults
+[0m14:21:54.699239 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:8cb9c13d-7427-4d29-affc-d237c68e26b4&page=queryresults
+[0m14:21:54.718494 [debug] [Thread-1 (]: Database Error in model stg_transactions (models\staging\stg_transactions.sql)
+  Not found: Dataset bitcoin-anomaly-portfolio:dbt_bitcoin was not found in location US
+  compiled code at target\run\bitcoin_anomaly_detection\models\staging\stg_transactions.sql
+[0m14:21:54.722145 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7c5597b-e12b-463e-b2ba-da29af70ce18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC7554D5A0>]}
+[0m14:21:54.723346 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model dbt_bitcoin.stg_transactions .............. [[31mERROR[0m in 21.75s]
+[0m14:21:54.724616 [debug] [Thread-1 (]: Finished running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:21:54.725987 [debug] [Thread-7 (]: Marking all children of 'model.bitcoin_anomaly_detection.stg_transactions' to be skipped because of status 'error'.  Reason: Database Error in model stg_transactions (models\staging\stg_transactions.sql)
+  Not found: Dataset bitcoin-anomaly-portfolio:dbt_bitcoin was not found in location US
+  compiled code at target\run\bitcoin_anomaly_detection\models\staging\stg_transactions.sql.
+[0m14:21:54.729111 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:21:54.730264 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:21:54.730831 [debug] [MainThread]: Connection 'list_bitcoin-anomaly-portfolio' was properly closed.
+[0m14:21:54.731346 [debug] [MainThread]: Connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin' was properly closed.
+[0m14:21:54.732342 [debug] [MainThread]: Connection 'model.bitcoin_anomaly_detection.stg_transactions' was properly closed.
+[0m14:21:54.733476 [info ] [MainThread]: 
+[0m14:21:54.734559 [info ] [MainThread]: Finished running 1 view model in 0 hours 1 minutes and 28.50 seconds (88.50s).
+[0m14:21:54.736645 [debug] [MainThread]: Command end result
+[0m14:21:54.784530 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:21:54.789681 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:21:54.801508 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\run_results.json
+[0m14:21:54.802217 [info ] [MainThread]: 
+[0m14:21:54.803100 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:21:54.803899 [info ] [MainThread]: 
+[0m14:21:54.804917 [error] [MainThread]: [31mFailure in model stg_transactions (models\staging\stg_transactions.sql)[0m
+[0m14:21:54.805902 [error] [MainThread]:   Database Error in model stg_transactions (models\staging\stg_transactions.sql)
+  Not found: Dataset bitcoin-anomaly-portfolio:dbt_bitcoin was not found in location US
+  compiled code at target\run\bitcoin_anomaly_detection\models\staging\stg_transactions.sql
+[0m14:21:54.806717 [info ] [MainThread]: 
+[0m14:21:54.807527 [info ] [MainThread]:   compiled code at target\compiled\bitcoin_anomaly_detection\models\staging\stg_transactions.sql
+[0m14:21:54.808228 [info ] [MainThread]: 
+[0m14:21:54.809212 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:21:54.810231 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m14:21:54.812468 [debug] [MainThread]: Command `dbt run` failed at 14:21:54.812115 after 105.44 seconds
+[0m14:21:54.813290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC75545270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC7557C680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC5BC63750>]}
+[0m14:21:54.814021 [debug] [MainThread]: Flushing usage events
+[0m14:21:55.529711 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:23:26.666208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023942692CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023944813ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023944813C50>]}
+
+
+============================== 14:23:26.672486 | 22f0042d-7d5a-471e-8c17-c6f586abc80b ==============================
+[0m14:23:26.672486 [info ] [MainThread]: Running with dbt=1.11.0-rc3
+[0m14:23:26.673409 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt init bitcoin_anomaly_detection', 'log_format': 'default', 'cache_selected_only': 'False', 'target_path': 'None', 'profiles_dir': 'C:\\Users\\Microsoft\\.dbt', 'warn_error': 'None', 'log_path': 'C:\\Users\\Microsoft\\Desktop\\Projects\\Python Projects\\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\\bitcoin_anomaly_detection\\logs', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m14:23:26.707751 [info ] [MainThread]: Setting up your profile.
+[0m14:24:30.094164 [info ] [MainThread]: Profile bitcoin_anomaly_detection written to C:\Users\Microsoft\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:24:30.108574 [debug] [MainThread]: Command `dbt init` succeeded at 14:24:30.108261 after 63.72 seconds
+[0m14:24:30.109302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002395402C510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000239448D9B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000239424CA360>]}
+[0m14:24:30.110076 [debug] [MainThread]: Flushing usage events
+[0m14:24:30.775561 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:24:40.020504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A044752CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0468DBED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0468DBC50>]}
+
+
+============================== 14:24:40.026989 | 830e397d-1459-4bbb-8fe2-8d2e2cc63719 ==============================
+[0m14:24:40.026989 [info ] [MainThread]: Running with dbt=1.11.0-rc3
+[0m14:24:40.027902 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'write_json': 'True', 'log_format': 'default', 'use_colors': 'True', 'no_print': 'None', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Microsoft\\Desktop\\Projects\\Python Projects\\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\\bitcoin_anomaly_detection\\logs', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Microsoft\\.dbt', 'invocation_command': 'dbt run --models stg_transactions', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m14:24:40.028525 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m14:24:40.029172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '830e397d-1459-4bbb-8fe2-8d2e2cc63719', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0467EAB10>]}
+[0m14:24:54.805180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '830e397d-1459-4bbb-8fe2-8d2e2cc63719', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A04520E250>]}
+[0m14:24:54.962885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '830e397d-1459-4bbb-8fe2-8d2e2cc63719', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A046755650>]}
+[0m14:24:54.964090 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m14:24:56.931461 [debug] [MainThread]: checksum: 0c6350755389a6ed721b17ac809f023d953b5a3e5903ed71b682e7badc0c55b0, vars: {}, profile: , target: , version: 1.11.0rc3
+[0m14:24:57.357082 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:24:57.357629 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:24:57.358058 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:24:57.443548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '830e397d-1459-4bbb-8fe2-8d2e2cc63719', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A05D6D0E60>]}
+[0m14:24:57.603614 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:24:57.609173 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:24:57.653925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '830e397d-1459-4bbb-8fe2-8d2e2cc63719', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A05C1AE190>]}
+[0m14:24:57.654695 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 495 macros
+[0m14:24:57.655494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '830e397d-1459-4bbb-8fe2-8d2e2cc63719', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A05D73CEF0>]}
+[0m14:24:57.657634 [info ] [MainThread]: 
+[0m14:24:57.659694 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:24:57.660355 [info ] [MainThread]: 
+[0m14:24:57.661577 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:24:57.664008 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bitcoin-anomaly-portfolio'
+[0m14:24:57.664837 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:25:43.401935 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin'
+[0m14:25:43.402851 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:26:05.136460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '830e397d-1459-4bbb-8fe2-8d2e2cc63719', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A05D6CEBD0>]}
+[0m14:26:05.137330 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:26:05.143908 [debug] [Thread-1 (]: Began running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:26:05.145101 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_bitcoin.stg_transactions ....................... [RUN]
+[0m14:26:05.146503 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.stg_transactions'
+[0m14:26:05.147374 [debug] [Thread-1 (]: Began compiling node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:26:05.164956 [debug] [Thread-1 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.stg_transactions"
+[0m14:26:05.170697 [debug] [Thread-1 (]: Began executing node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:26:05.241123 [debug] [Thread-1 (]: Writing runtime sql for node "model.bitcoin_anomaly_detection.stg_transactions"
+[0m14:26:05.243056 [debug] [Thread-1 (]: On model.bitcoin_anomaly_detection.stg_transactions: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "node_id": "model.bitcoin_anomaly_detection.stg_transactions"} */
+
+
+  create or replace view `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`stg_transactions`
+  OPTIONS()
+  as -- models/staging/stg_transactions.sql
+  -- View para não gastar storage no Sandbox
+
+WITH base AS (
+  SELECT
+    -- Chave única da transação: use backticks porque 'hash' é keyword reservada!
+    `hash` AS transaction_hash,
+
+    -- Timestamp e data
+    block_timestamp,
+    DATE(block_timestamp) AS transaction_date,
+
+    -- Valores em BTC (convertendo de satoshis)
+    SAFE_DIVIDE(input_value, 100000000) AS input_btc,
+    SAFE_DIVIDE(output_value, 100000000) AS output_btc,
+    SAFE_DIVIDE(fee, 100000000) AS fee_btc,
+
+    -- Contagens de inputs e outputs
+    input_count,
+    output_count,
+
+    -- Se é transação de mineração (coinbase)
+    is_coinbase
+
+  FROM `bigquery-public-data`.`crypto_bitcoin`.`transactions`
+
+  -- Filtra dados recentes para queries baratas e evitar limites do Sandbox
+  -- Ajuste a data se quiser mais/menos histórico (ex: '2023-01-01' para mais recente)
+  WHERE block_timestamp >= '2022-01-01'
+)
+
+SELECT *
+FROM base
+
+-- Comentários finais:
+-- - Os backticks (`hash`) resolvem o erro de "Unexpected keyword HASH".
+-- - Isso é comum em BigQuery com colunas que coincidem com funções reservadas.
+-- - SAFE_DIVIDE protege contra divisão por zero.
+-- - Filtro de data é crucial no Sandbox (mantém bytes processados baixos).;
+
+
+[0m14:26:05.244010 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:26:26.870184 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:6148d62c-4154-4c3d-b654-de4180500b7d&page=queryresults
+[0m14:26:28.056456 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '830e397d-1459-4bbb-8fe2-8d2e2cc63719', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A05D7F09F0>]}
+[0m14:26:28.057960 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dbt_bitcoin.stg_transactions .................. [[32mCREATE VIEW (0 processed)[0m in 22.91s]
+[0m14:26:28.059682 [debug] [Thread-1 (]: Finished running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:26:28.061566 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:26:28.062458 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:26:28.062944 [debug] [MainThread]: Connection 'list_bitcoin-anomaly-portfolio' was properly closed.
+[0m14:26:28.063387 [debug] [MainThread]: Connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin' was properly closed.
+[0m14:26:28.063799 [debug] [MainThread]: Connection 'model.bitcoin_anomaly_detection.stg_transactions' was properly closed.
+[0m14:26:28.064292 [info ] [MainThread]: 
+[0m14:26:28.064974 [info ] [MainThread]: Finished running 1 view model in 0 hours 1 minutes and 30.40 seconds (90.40s).
+[0m14:26:28.066848 [debug] [MainThread]: Command end result
+[0m14:26:28.117193 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:26:28.121750 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:26:28.134054 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\run_results.json
+[0m14:26:28.134589 [info ] [MainThread]: 
+[0m14:26:28.135482 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:26:28.136259 [info ] [MainThread]: 
+[0m14:26:28.136919 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:26:28.137719 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m14:26:28.139346 [debug] [MainThread]: Command `dbt run` succeeded at 14:26:28.139148 after 108.34 seconds
+[0m14:26:28.139899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A05D756990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A05D70E960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0440F5150>]}
+[0m14:26:28.143151 [debug] [MainThread]: Flushing usage events
+[0m14:26:28.948532 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:29:01.574031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D98ABE2CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D98CD6BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D98CD6BC50>]}
+
+
+============================== 14:29:01.581148 | c45c78e8-9316-4a70-bdf3-a92a22370192 ==============================
+[0m14:29:01.581148 [info ] [MainThread]: Running with dbt=1.11.0-rc3
+[0m14:29:01.582115 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'printer_width': '80', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Microsoft\\.dbt', 'use_colors': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\Microsoft\\Desktop\\Projects\\Python Projects\\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\\bitcoin_anomaly_detection\\logs', 'fail_fast': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt run', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m14:29:16.296556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c45c78e8-9316-4a70-bdf3-a92a22370192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D98B120640>]}
+[0m14:29:16.460669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c45c78e8-9316-4a70-bdf3-a92a22370192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9A2597AC0>]}
+[0m14:29:16.461655 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m14:29:18.271536 [debug] [MainThread]: checksum: 0c6350755389a6ed721b17ac809f023d953b5a3e5903ed71b682e7badc0c55b0, vars: {}, profile: , target: , version: 1.11.0rc3
+[0m14:29:18.696976 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m14:29:18.697723 [debug] [MainThread]: Partial parsing: added file: bitcoin_anomaly_detection://models\marts\fct_transaction_features.sql
+[0m14:29:19.351027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c45c78e8-9316-4a70-bdf3-a92a22370192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9A2533950>]}
+[0m14:29:19.516199 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:29:19.522177 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:29:19.569039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c45c78e8-9316-4a70-bdf3-a92a22370192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D99C4CC5F0>]}
+[0m14:29:19.569824 [info ] [MainThread]: Found 4 models, 4 data tests, 1 source, 495 macros
+[0m14:29:19.570563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c45c78e8-9316-4a70-bdf3-a92a22370192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9A26492B0>]}
+[0m14:29:19.573194 [info ] [MainThread]: 
+[0m14:29:19.573991 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:29:19.574597 [info ] [MainThread]: 
+[0m14:29:19.575947 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:29:19.583164 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bitcoin-anomaly-portfolio'
+[0m14:29:19.584176 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:30:05.420932 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin'
+[0m14:30:05.421801 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:30:26.933119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c45c78e8-9316-4a70-bdf3-a92a22370192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9A3E11BF0>]}
+[0m14:30:26.934156 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:30:26.941046 [debug] [Thread-1 (]: Began running node model.bitcoin_anomaly_detection.my_first_dbt_model
+[0m14:30:26.943053 [debug] [Thread-2 (]: Began running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:30:26.942304 [info ] [Thread-1 (]: 1 of 4 START sql table model dbt_bitcoin.my_first_dbt_model .................... [RUN]
+[0m14:30:26.945508 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.my_first_dbt_model'
+[0m14:30:26.944375 [info ] [Thread-2 (]: 2 of 4 START sql view model dbt_bitcoin.stg_transactions ....................... [RUN]
+[0m14:30:26.946448 [debug] [Thread-1 (]: Began compiling node model.bitcoin_anomaly_detection.my_first_dbt_model
+[0m14:30:26.947297 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.stg_transactions'
+[0m14:30:26.960426 [debug] [Thread-2 (]: Began compiling node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:30:26.962725 [debug] [Thread-1 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.my_first_dbt_model"
+[0m14:30:26.968595 [debug] [Thread-2 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.stg_transactions"
+[0m14:30:26.970660 [debug] [Thread-2 (]: Began executing node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:30:26.992745 [debug] [Thread-1 (]: Began executing node model.bitcoin_anomaly_detection.my_first_dbt_model
+[0m14:30:27.084341 [debug] [Thread-2 (]: Writing runtime sql for node "model.bitcoin_anomaly_detection.stg_transactions"
+[0m14:30:27.117581 [debug] [Thread-1 (]: Writing runtime sql for node "model.bitcoin_anomaly_detection.my_first_dbt_model"
+[0m14:30:27.119372 [debug] [Thread-2 (]: On model.bitcoin_anomaly_detection.stg_transactions: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "node_id": "model.bitcoin_anomaly_detection.stg_transactions"} */
+
+
+  create or replace view `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`stg_transactions`
+  OPTIONS()
+  as -- models/staging/stg_transactions.sql
+  -- View para não gastar storage no Sandbox
+
+WITH base AS (
+  SELECT
+    -- Chave única da transação: use backticks porque 'hash' é keyword reservada!
+    `hash` AS transaction_hash,
+
+    -- Timestamp e data
+    block_timestamp,
+    DATE(block_timestamp) AS transaction_date,
+
+    -- Valores em BTC (convertendo de satoshis)
+    SAFE_DIVIDE(input_value, 100000000) AS input_btc,
+    SAFE_DIVIDE(output_value, 100000000) AS output_btc,
+    SAFE_DIVIDE(fee, 100000000) AS fee_btc,
+
+    -- Contagens de inputs e outputs
+    input_count,
+    output_count,
+
+    -- Se é transação de mineração (coinbase)
+    is_coinbase
+
+  FROM `bigquery-public-data`.`crypto_bitcoin`.`transactions`
+
+  -- Filtra dados recentes para queries baratas e evitar limites do Sandbox
+  -- Ajuste a data se quiser mais/menos histórico (ex: '2023-01-01' para mais recente)
+  WHERE block_timestamp >= '2022-01-01'
+)
+
+SELECT *
+FROM base
+
+-- Comentários finais:
+-- - Os backticks (`hash`) resolvem o erro de "Unexpected keyword HASH".
+-- - Isso é comum em BigQuery com colunas que coincidem com funções reservadas.
+-- - SAFE_DIVIDE protege contra divisão por zero.
+-- - Filtro de data é crucial no Sandbox (mantém bytes processados baixos).;
+
+
+[0m14:30:27.120432 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m14:30:27.122290 [debug] [Thread-1 (]: On model.bitcoin_anomaly_detection.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "node_id": "model.bitcoin_anomaly_detection.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`my_first_dbt_model`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m14:30:27.123245 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:30:48.739591 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:9a2a8a6e-d4e2-4b48-83cc-32402bd0e99a&page=queryresults
+[0m14:30:48.834090 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:a4f2be1d-4d3e-4cf3-a257-59598512788d&page=queryresults
+[0m14:30:49.754029 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c45c78e8-9316-4a70-bdf3-a92a22370192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9A3E61E50>]}
+[0m14:30:49.755413 [info ] [Thread-2 (]: 2 of 4 OK created sql view model dbt_bitcoin.stg_transactions .................. [[32mCREATE VIEW (0 processed)[0m in 22.80s]
+[0m14:30:49.756807 [debug] [Thread-2 (]: Finished running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:30:49.757746 [debug] [Thread-3 (]: Began running node model.bitcoin_anomaly_detection.fct_transaction_features
+[0m14:30:49.758608 [info ] [Thread-3 (]: 3 of 4 START sql view model dbt_bitcoin.fct_transaction_features ............... [RUN]
+[0m14:30:49.759614 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.fct_transaction_features'
+[0m14:30:49.760275 [debug] [Thread-3 (]: Began compiling node model.bitcoin_anomaly_detection.fct_transaction_features
+[0m14:30:49.765227 [debug] [Thread-3 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.fct_transaction_features"
+[0m14:30:49.768831 [debug] [Thread-3 (]: Began executing node model.bitcoin_anomaly_detection.fct_transaction_features
+[0m14:30:49.775502 [debug] [Thread-3 (]: Writing runtime sql for node "model.bitcoin_anomaly_detection.fct_transaction_features"
+[0m14:30:49.778231 [debug] [Thread-3 (]: On model.bitcoin_anomaly_detection.fct_transaction_features: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "node_id": "model.bitcoin_anomaly_detection.fct_transaction_features"} */
+
+
+  create or replace view `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`fct_transaction_features`
+  OPTIONS()
+  as 
+
+SELECT
+  transaction_hash,
+  transaction_date,
+  block_timestamp,
+
+  output_btc AS transaction_value_btc,
+
+  input_count,
+  output_count,
+  (input_count + output_count) AS total_io_count,
+  SAFE_DIVIDE(fee_btc, output_btc) AS fee_ratio,
+  CASE WHEN output_btc > 100 THEN 1 ELSE 0 END AS is_high_value,
+  CASE WHEN input_count > 50 OR output_count > 50 THEN 1 ELSE 0 END AS is_high_io,
+  is_coinbase
+
+FROM `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`stg_transactions`;
+
+
+[0m14:30:49.779092 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:30:50.688308 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c45c78e8-9316-4a70-bdf3-a92a22370192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9A3DBD910>]}
+[0m14:30:50.689541 [info ] [Thread-1 (]: 1 of 4 OK created sql table model dbt_bitcoin.my_first_dbt_model ............... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 23.74s]
+[0m14:30:50.691025 [debug] [Thread-1 (]: Finished running node model.bitcoin_anomaly_detection.my_first_dbt_model
+[0m14:30:50.691957 [debug] [Thread-4 (]: Began running node model.bitcoin_anomaly_detection.my_second_dbt_model
+[0m14:30:50.692921 [info ] [Thread-4 (]: 4 of 4 START sql view model dbt_bitcoin.my_second_dbt_model .................... [RUN]
+[0m14:30:50.694026 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.my_second_dbt_model'
+[0m14:30:50.694766 [debug] [Thread-4 (]: Began compiling node model.bitcoin_anomaly_detection.my_second_dbt_model
+[0m14:30:50.699661 [debug] [Thread-4 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.my_second_dbt_model"
+[0m14:30:50.702322 [debug] [Thread-4 (]: Began executing node model.bitcoin_anomaly_detection.my_second_dbt_model
+[0m14:30:50.708273 [debug] [Thread-4 (]: Writing runtime sql for node "model.bitcoin_anomaly_detection.my_second_dbt_model"
+[0m14:30:50.710152 [debug] [Thread-4 (]: On model.bitcoin_anomaly_detection.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "node_id": "model.bitcoin_anomaly_detection.my_second_dbt_model"} */
+
+
+  create or replace view `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m14:30:50.710967 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m14:31:11.512971 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:dc813568-7cc1-4e96-801f-14a268f9d3e1&page=queryresults
+[0m14:31:12.018067 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c45c78e8-9316-4a70-bdf3-a92a22370192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9A40F89B0>]}
+[0m14:31:12.019176 [info ] [Thread-3 (]: 3 of 4 OK created sql view model dbt_bitcoin.fct_transaction_features .......... [[32mCREATE VIEW (0 processed)[0m in 22.26s]
+[0m14:31:12.020733 [debug] [Thread-3 (]: Finished running node model.bitcoin_anomaly_detection.fct_transaction_features
+[0m14:31:12.409914 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:05527f02-3648-453f-8a86-92453ef8db1e&page=queryresults
+[0m14:31:12.897391 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c45c78e8-9316-4a70-bdf3-a92a22370192', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9A3A19150>]}
+[0m14:31:12.898459 [info ] [Thread-4 (]: 4 of 4 OK created sql view model dbt_bitcoin.my_second_dbt_model ............... [[32mCREATE VIEW (0 processed)[0m in 22.20s]
+[0m14:31:12.899818 [debug] [Thread-4 (]: Finished running node model.bitcoin_anomaly_detection.my_second_dbt_model
+[0m14:31:12.901819 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:31:12.902760 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:31:12.903234 [debug] [MainThread]: Connection 'list_bitcoin-anomaly-portfolio' was properly closed.
+[0m14:31:12.903695 [debug] [MainThread]: Connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin' was properly closed.
+[0m14:31:12.904150 [debug] [MainThread]: Connection 'model.bitcoin_anomaly_detection.my_first_dbt_model' was properly closed.
+[0m14:31:12.904656 [debug] [MainThread]: Connection 'model.bitcoin_anomaly_detection.stg_transactions' was properly closed.
+[0m14:31:12.905249 [debug] [MainThread]: Connection 'model.bitcoin_anomaly_detection.fct_transaction_features' was properly closed.
+[0m14:31:12.905728 [debug] [MainThread]: Connection 'model.bitcoin_anomaly_detection.my_second_dbt_model' was properly closed.
+[0m14:31:12.906307 [info ] [MainThread]: 
+[0m14:31:12.906987 [info ] [MainThread]: Finished running 1 table model, 3 view models in 0 hours 1 minutes and 53.33 seconds (113.33s).
+[0m14:31:12.912398 [debug] [MainThread]: Command end result
+[0m14:31:12.971589 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:31:12.980511 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:31:12.992914 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\run_results.json
+[0m14:31:12.993778 [info ] [MainThread]: 
+[0m14:31:12.994609 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:31:12.995435 [info ] [MainThread]: 
+[0m14:31:12.996242 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m14:31:12.998022 [debug] [MainThread]: Command `dbt run` succeeded at 14:31:12.997801 after 131.71 seconds
+[0m14:31:12.998677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D98CDD1470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9852CD470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D98A55DDF0>]}
+[0m14:31:12.999268 [debug] [MainThread]: Flushing usage events
+[0m14:31:13.667130 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:43:06.074763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021413512CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002141569BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002141569BC50>]}
+
+
+============================== 14:43:06.081192 | 1eeea1fd-81eb-4bda-a0a0-eb504aa834bd ==============================
+[0m14:43:06.081192 [info ] [MainThread]: Running with dbt=1.11.0-rc3
+[0m14:43:06.082104 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'no_print': 'None', 'profiles_dir': 'C:\\Users\\Microsoft\\.dbt', 'cache_selected_only': 'False', 'use_colors': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'C:\\Users\\Microsoft\\Desktop\\Projects\\Python Projects\\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\\bitcoin_anomaly_detection\\logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'printer_width': '80', 'write_json': 'True'}
+[0m14:43:19.651788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1eeea1fd-81eb-4bda-a0a0-eb504aa834bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021413A50640>]}
+[0m14:43:19.801529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1eeea1fd-81eb-4bda-a0a0-eb504aa834bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142AEB7AC0>]}
+[0m14:43:19.802501 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m14:43:21.488000 [debug] [MainThread]: checksum: 0c6350755389a6ed721b17ac809f023d953b5a3e5903ed71b682e7badc0c55b0, vars: {}, profile: , target: , version: 1.11.0rc3
+[0m14:43:21.761462 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m14:43:21.762375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1eeea1fd-81eb-4bda-a0a0-eb504aa834bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142AE52E50>]}
+[0m14:43:24.717822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1eeea1fd-81eb-4bda-a0a0-eb504aa834bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142C49AB70>]}
+[0m14:43:24.862449 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:43:24.868393 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:43:24.912485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1eeea1fd-81eb-4bda-a0a0-eb504aa834bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142C856CF0>]}
+[0m14:43:24.913214 [info ] [MainThread]: Found 4 models, 4 data tests, 1 source, 495 macros
+[0m14:43:24.914109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1eeea1fd-81eb-4bda-a0a0-eb504aa834bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142C8A5980>]}
+[0m14:43:24.917115 [info ] [MainThread]: 
+[0m14:43:24.917858 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:43:24.918627 [info ] [MainThread]: 
+[0m14:43:24.920187 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:43:24.927757 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bitcoin-anomaly-portfolio'
+[0m14:43:24.928490 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:44:11.222858 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin'
+[0m14:44:11.223687 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:44:32.676084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1eeea1fd-81eb-4bda-a0a0-eb504aa834bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142C851D90>]}
+[0m14:44:32.676938 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:44:32.684084 [debug] [Thread-1 (]: Began running node model.bitcoin_anomaly_detection.my_first_dbt_model
+[0m14:44:32.684817 [debug] [Thread-2 (]: Began running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:44:32.685700 [info ] [Thread-1 (]: 1 of 4 START sql table model dbt_bitcoin.my_first_dbt_model .................... [RUN]
+[0m14:44:32.687626 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.my_first_dbt_model'
+[0m14:44:32.686554 [info ] [Thread-2 (]: 2 of 4 START sql view model dbt_bitcoin.stg_transactions ....................... [RUN]
+[0m14:44:32.688523 [debug] [Thread-1 (]: Began compiling node model.bitcoin_anomaly_detection.my_first_dbt_model
+[0m14:44:32.689530 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.stg_transactions'
+[0m14:44:32.703012 [debug] [Thread-1 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.my_first_dbt_model"
+[0m14:44:32.703887 [debug] [Thread-2 (]: Began compiling node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:44:32.710807 [debug] [Thread-2 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.stg_transactions"
+[0m14:44:32.712827 [debug] [Thread-2 (]: Began executing node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:44:32.713680 [debug] [Thread-1 (]: Began executing node model.bitcoin_anomaly_detection.my_first_dbt_model
+[0m14:44:32.810003 [debug] [Thread-2 (]: Writing runtime sql for node "model.bitcoin_anomaly_detection.stg_transactions"
+[0m14:44:32.846052 [debug] [Thread-1 (]: Writing runtime sql for node "model.bitcoin_anomaly_detection.my_first_dbt_model"
+[0m14:44:32.847427 [debug] [Thread-2 (]: On model.bitcoin_anomaly_detection.stg_transactions: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "node_id": "model.bitcoin_anomaly_detection.stg_transactions"} */
+
+
+  create or replace view `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`stg_transactions`
+  OPTIONS()
+  as -- models/staging/stg_transactions.sql
+  -- View para não gastar storage no Sandbox
+
+WITH base AS (
+  SELECT
+    -- Chave única da transação: use backticks porque 'hash' é keyword reservada!
+    `hash` AS transaction_hash,
+
+    -- Timestamp e data
+    block_timestamp,
+    DATE(block_timestamp) AS transaction_date,
+
+    -- Valores em BTC (convertendo de satoshis)
+    SAFE_DIVIDE(input_value, 100000000) AS input_btc,
+    SAFE_DIVIDE(output_value, 100000000) AS output_btc,
+    SAFE_DIVIDE(fee, 100000000) AS fee_btc,
+
+    -- Contagens de inputs e outputs
+    input_count,
+    output_count,
+
+    -- Se é transação de mineração (coinbase)
+    is_coinbase
+
+  FROM `bigquery-public-data`.`crypto_bitcoin`.`transactions`
+
+  -- Filtra dados recentes para queries baratas e evitar limites do Sandbox
+  -- Ajuste a data se quiser mais/menos histórico (ex: '2023-01-01' para mais recente)
+  WHERE block_timestamp >= '2022-01-01'
+)
+
+SELECT *
+FROM base
+
+-- Comentários finais:
+-- - Os backticks (`hash`) resolvem o erro de "Unexpected keyword HASH".
+-- - Isso é comum em BigQuery com colunas que coincidem com funções reservadas.
+-- - SAFE_DIVIDE protege contra divisão por zero.
+-- - Filtro de data é crucial no Sandbox (mantém bytes processados baixos).;
+
+
+[0m14:44:32.848442 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m14:44:32.850793 [debug] [Thread-1 (]: On model.bitcoin_anomaly_detection.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "node_id": "model.bitcoin_anomaly_detection.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`my_first_dbt_model`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m14:44:32.852716 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:44:54.628262 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:ed6d035e-d0e2-440e-b5d5-541401966f48&page=queryresults
+[0m14:44:54.709857 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:8676e249-76a4-43a4-bc54-76581b3f57de&page=queryresults
+[0m14:44:55.666472 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1eeea1fd-81eb-4bda-a0a0-eb504aa834bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142C642570>]}
+[0m14:44:55.667878 [info ] [Thread-2 (]: 2 of 4 OK created sql view model dbt_bitcoin.stg_transactions .................. [[32mCREATE VIEW (0 processed)[0m in 22.97s]
+[0m14:44:55.669488 [debug] [Thread-2 (]: Finished running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:44:55.670696 [debug] [Thread-3 (]: Began running node model.bitcoin_anomaly_detection.fct_transaction_features
+[0m14:44:55.671762 [info ] [Thread-3 (]: 3 of 4 START sql view model dbt_bitcoin.fct_transaction_features ............... [RUN]
+[0m14:44:55.672997 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.fct_transaction_features'
+[0m14:44:55.673773 [debug] [Thread-3 (]: Began compiling node model.bitcoin_anomaly_detection.fct_transaction_features
+[0m14:44:55.678564 [debug] [Thread-3 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.fct_transaction_features"
+[0m14:44:55.680367 [debug] [Thread-3 (]: Began executing node model.bitcoin_anomaly_detection.fct_transaction_features
+[0m14:44:55.688332 [debug] [Thread-3 (]: Writing runtime sql for node "model.bitcoin_anomaly_detection.fct_transaction_features"
+[0m14:44:55.690414 [debug] [Thread-3 (]: On model.bitcoin_anomaly_detection.fct_transaction_features: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "node_id": "model.bitcoin_anomaly_detection.fct_transaction_features"} */
+
+
+  create or replace view `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`fct_transaction_features`
+  OPTIONS()
+  as 
+
+SELECT
+  transaction_hash,
+  transaction_date,
+  block_timestamp,
+
+  output_btc AS transaction_value_btc,
+
+  input_count,
+  output_count,
+  (input_count + output_count) AS total_io_count,
+  SAFE_DIVIDE(fee_btc, output_btc) AS fee_ratio,
+  CASE WHEN output_btc > 100 THEN 1 ELSE 0 END AS is_high_value,
+  CASE WHEN input_count > 50 OR output_count > 50 THEN 1 ELSE 0 END AS is_high_io,
+  is_coinbase
+
+FROM `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`stg_transactions`;
+
+
+[0m14:44:55.691245 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:44:56.665136 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1eeea1fd-81eb-4bda-a0a0-eb504aa834bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142C8CEFD0>]}
+[0m14:44:56.666524 [info ] [Thread-1 (]: 1 of 4 OK created sql table model dbt_bitcoin.my_first_dbt_model ............... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 23.98s]
+[0m14:44:56.668211 [debug] [Thread-1 (]: Finished running node model.bitcoin_anomaly_detection.my_first_dbt_model
+[0m14:44:56.669425 [debug] [Thread-4 (]: Began running node model.bitcoin_anomaly_detection.my_second_dbt_model
+[0m14:44:56.670546 [info ] [Thread-4 (]: 4 of 4 START sql view model dbt_bitcoin.my_second_dbt_model .................... [RUN]
+[0m14:44:56.671853 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.my_second_dbt_model'
+[0m14:44:56.672792 [debug] [Thread-4 (]: Began compiling node model.bitcoin_anomaly_detection.my_second_dbt_model
+[0m14:44:56.678489 [debug] [Thread-4 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.my_second_dbt_model"
+[0m14:44:56.680470 [debug] [Thread-4 (]: Began executing node model.bitcoin_anomaly_detection.my_second_dbt_model
+[0m14:44:56.695933 [debug] [Thread-4 (]: Writing runtime sql for node "model.bitcoin_anomaly_detection.my_second_dbt_model"
+[0m14:44:56.698804 [debug] [Thread-4 (]: On model.bitcoin_anomaly_detection.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "node_id": "model.bitcoin_anomaly_detection.my_second_dbt_model"} */
+
+
+  create or replace view `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m14:44:56.700453 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m14:45:17.410066 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:7c9eeee2-8fc9-4571-b85b-193eb1fc3115&page=queryresults
+[0m14:45:17.898290 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1eeea1fd-81eb-4bda-a0a0-eb504aa834bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142CC2ADD0>]}
+[0m14:45:17.899479 [info ] [Thread-3 (]: 3 of 4 OK created sql view model dbt_bitcoin.fct_transaction_features .......... [[32mCREATE VIEW (0 processed)[0m in 22.23s]
+[0m14:45:17.901061 [debug] [Thread-3 (]: Finished running node model.bitcoin_anomaly_detection.fct_transaction_features
+[0m14:45:18.295212 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:9e90d3a1-9fae-49cd-bd7c-9576aaf8c63e&page=queryresults
+[0m14:45:18.794480 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1eeea1fd-81eb-4bda-a0a0-eb504aa834bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142CCEEEB0>]}
+[0m14:45:18.795588 [info ] [Thread-4 (]: 4 of 4 OK created sql view model dbt_bitcoin.my_second_dbt_model ............... [[32mCREATE VIEW (0 processed)[0m in 22.12s]
+[0m14:45:18.797136 [debug] [Thread-4 (]: Finished running node model.bitcoin_anomaly_detection.my_second_dbt_model
+[0m14:45:18.799631 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:45:18.800757 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:45:18.801350 [debug] [MainThread]: Connection 'list_bitcoin-anomaly-portfolio' was properly closed.
+[0m14:45:18.801940 [debug] [MainThread]: Connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin' was properly closed.
+[0m14:45:18.802483 [debug] [MainThread]: Connection 'model.bitcoin_anomaly_detection.my_first_dbt_model' was properly closed.
+[0m14:45:18.802975 [debug] [MainThread]: Connection 'model.bitcoin_anomaly_detection.stg_transactions' was properly closed.
+[0m14:45:18.803434 [debug] [MainThread]: Connection 'model.bitcoin_anomaly_detection.fct_transaction_features' was properly closed.
+[0m14:45:18.803944 [debug] [MainThread]: Connection 'model.bitcoin_anomaly_detection.my_second_dbt_model' was properly closed.
+[0m14:45:18.804520 [info ] [MainThread]: 
+[0m14:45:18.805191 [info ] [MainThread]: Finished running 1 table model, 3 view models in 0 hours 1 minutes and 53.89 seconds (113.89s).
+[0m14:45:18.808989 [debug] [MainThread]: Command end result
+[0m14:45:19.092714 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:45:19.097935 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:45:19.109142 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\run_results.json
+[0m14:45:19.109770 [info ] [MainThread]: 
+[0m14:45:19.110576 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:45:19.111409 [info ] [MainThread]: 
+[0m14:45:19.112301 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m14:45:19.114398 [debug] [MainThread]: Command `dbt run` succeeded at 14:45:19.114166 after 133.34 seconds
+[0m14:45:19.115063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142C5F4E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142C5F4D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142C5F4710>]}
+[0m14:45:19.115637 [debug] [MainThread]: Flushing usage events
+[0m14:45:19.836331 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:53:44.615593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026CAFB82CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026CB1CF7D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026CB1CF79D0>]}
+
+
+============================== 14:53:44.622079 | 1a60ba55-7489-4783-b24e-9e7a68da4c33 ==============================
+[0m14:53:44.622079 [info ] [MainThread]: Running with dbt=1.11.0-rc3
+[0m14:53:44.623050 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'C:\\Users\\Microsoft\\.dbt', 'target_path': 'None', 'no_print': 'None', 'printer_width': '80', 'use_colors': 'True', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Microsoft\\Desktop\\Projects\\Python Projects\\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\\bitcoin_anomaly_detection\\logs', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt docs generate', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m14:53:58.491305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1a60ba55-7489-4783-b24e-9e7a68da4c33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026CB00C0640>]}
+[0m14:53:58.635670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1a60ba55-7489-4783-b24e-9e7a68da4c33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026CC7527AC0>]}
+[0m14:53:58.636649 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m14:54:00.294660 [debug] [MainThread]: checksum: 0c6350755389a6ed721b17ac809f023d953b5a3e5903ed71b682e7badc0c55b0, vars: {}, profile: , target: , version: 1.11.0rc3
+[0m14:54:00.692150 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:54:00.692724 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:54:00.693124 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:54:00.775933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1a60ba55-7489-4783-b24e-9e7a68da4c33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026CC74C0B50>]}
+[0m14:54:00.819270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1a60ba55-7489-4783-b24e-9e7a68da4c33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026CC8AD87D0>]}
+[0m14:54:00.820027 [info ] [MainThread]: Found 4 models, 4 data tests, 1 source, 495 macros
+[0m14:54:00.820846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1a60ba55-7489-4783-b24e-9e7a68da4c33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026CC7503930>]}
+[0m14:54:00.823844 [info ] [MainThread]: 
+[0m14:54:00.824533 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:54:00.825128 [info ] [MainThread]: 
+[0m14:54:00.826509 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:54:00.833169 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin'
+[0m14:54:00.833830 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:54:46.690733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1a60ba55-7489-4783-b24e-9e7a68da4c33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026CC8B43A00>]}
+[0m14:54:46.691673 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:54:46.698704 [debug] [Thread-1 (]: Began running node model.bitcoin_anomaly_detection.my_first_dbt_model
+[0m14:54:46.699630 [debug] [Thread-2 (]: Began running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:54:46.700774 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.my_first_dbt_model'
+[0m14:54:46.702047 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.stg_transactions'
+[0m14:54:46.702894 [debug] [Thread-1 (]: Began compiling node model.bitcoin_anomaly_detection.my_first_dbt_model
+[0m14:54:46.703515 [debug] [Thread-2 (]: Began compiling node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:54:46.719044 [debug] [Thread-1 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.my_first_dbt_model"
+[0m14:54:46.725390 [debug] [Thread-2 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.stg_transactions"
+[0m14:54:46.727297 [debug] [Thread-1 (]: Began executing node model.bitcoin_anomaly_detection.my_first_dbt_model
+[0m14:54:46.728178 [debug] [Thread-2 (]: Began executing node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:54:46.728980 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:54:46.729822 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m14:54:46.731431 [debug] [Thread-1 (]: Finished running node model.bitcoin_anomaly_detection.my_first_dbt_model
+[0m14:54:46.732934 [debug] [Thread-2 (]: Finished running node model.bitcoin_anomaly_detection.stg_transactions
+[0m14:54:46.734068 [debug] [Thread-1 (]: Began running node test.bitcoin_anomaly_detection.unique_my_first_dbt_model_id.16e066b321
+[0m14:54:46.734676 [debug] [Thread-3 (]: Began running node model.bitcoin_anomaly_detection.my_second_dbt_model
+[0m14:54:46.735338 [debug] [Thread-4 (]: Began running node test.bitcoin_anomaly_detection.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:54:46.736186 [debug] [Thread-2 (]: Began running node model.bitcoin_anomaly_detection.fct_transaction_features
+[0m14:54:46.736796 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bitcoin_anomaly_detection.my_first_dbt_model, now test.bitcoin_anomaly_detection.unique_my_first_dbt_model_id.16e066b321)
+[0m14:54:46.737620 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.bitcoin_anomaly_detection.my_second_dbt_model'
+[0m14:54:46.738491 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.bitcoin_anomaly_detection.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m14:54:46.739207 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.bitcoin_anomaly_detection.stg_transactions, now model.bitcoin_anomaly_detection.fct_transaction_features)
+[0m14:54:46.739877 [debug] [Thread-1 (]: Began compiling node test.bitcoin_anomaly_detection.unique_my_first_dbt_model_id.16e066b321
+[0m14:54:46.740541 [debug] [Thread-3 (]: Began compiling node model.bitcoin_anomaly_detection.my_second_dbt_model
+[0m14:54:46.741154 [debug] [Thread-4 (]: Began compiling node test.bitcoin_anomaly_detection.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:54:46.741895 [debug] [Thread-2 (]: Began compiling node model.bitcoin_anomaly_detection.fct_transaction_features
+[0m14:54:46.759410 [debug] [Thread-1 (]: Writing injected SQL for node "test.bitcoin_anomaly_detection.unique_my_first_dbt_model_id.16e066b321"
+[0m14:54:46.764779 [debug] [Thread-3 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.my_second_dbt_model"
+[0m14:54:46.782487 [debug] [Thread-4 (]: Writing injected SQL for node "test.bitcoin_anomaly_detection.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:54:46.788276 [debug] [Thread-2 (]: Writing injected SQL for node "model.bitcoin_anomaly_detection.fct_transaction_features"
+[0m14:54:46.790742 [debug] [Thread-2 (]: Began executing node model.bitcoin_anomaly_detection.fct_transaction_features
+[0m14:54:46.791597 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:54:46.793500 [debug] [Thread-2 (]: Finished running node model.bitcoin_anomaly_detection.fct_transaction_features
+[0m14:54:46.794219 [debug] [Thread-3 (]: Began executing node model.bitcoin_anomaly_detection.my_second_dbt_model
+[0m14:54:46.794932 [debug] [Thread-4 (]: Began executing node test.bitcoin_anomaly_detection.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:54:46.795631 [debug] [Thread-1 (]: Began executing node test.bitcoin_anomaly_detection.unique_my_first_dbt_model_id.16e066b321
+[0m14:54:46.796503 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m14:54:46.797175 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m14:54:46.797814 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:54:46.799354 [debug] [Thread-3 (]: Finished running node model.bitcoin_anomaly_detection.my_second_dbt_model
+[0m14:54:46.800837 [debug] [Thread-4 (]: Finished running node test.bitcoin_anomaly_detection.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:54:46.802334 [debug] [Thread-1 (]: Finished running node test.bitcoin_anomaly_detection.unique_my_first_dbt_model_id.16e066b321
+[0m14:54:46.803384 [debug] [Thread-3 (]: Began running node test.bitcoin_anomaly_detection.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:54:46.803985 [debug] [Thread-2 (]: Began running node test.bitcoin_anomaly_detection.not_null_my_second_dbt_model_id.151b76d778
+[0m14:54:46.804803 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.bitcoin_anomaly_detection.my_second_dbt_model, now test.bitcoin_anomaly_detection.unique_my_second_dbt_model_id.57a0f8c493)
+[0m14:54:46.805460 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.bitcoin_anomaly_detection.fct_transaction_features, now test.bitcoin_anomaly_detection.not_null_my_second_dbt_model_id.151b76d778)
+[0m14:54:46.806096 [debug] [Thread-3 (]: Began compiling node test.bitcoin_anomaly_detection.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:54:46.806697 [debug] [Thread-2 (]: Began compiling node test.bitcoin_anomaly_detection.not_null_my_second_dbt_model_id.151b76d778
+[0m14:54:46.813245 [debug] [Thread-3 (]: Writing injected SQL for node "test.bitcoin_anomaly_detection.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:54:46.820847 [debug] [Thread-2 (]: Writing injected SQL for node "test.bitcoin_anomaly_detection.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:54:46.823013 [debug] [Thread-2 (]: Began executing node test.bitcoin_anomaly_detection.not_null_my_second_dbt_model_id.151b76d778
+[0m14:54:46.823756 [debug] [Thread-3 (]: Began executing node test.bitcoin_anomaly_detection.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:54:46.824489 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m14:54:46.825239 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m14:54:46.826639 [debug] [Thread-2 (]: Finished running node test.bitcoin_anomaly_detection.not_null_my_second_dbt_model_id.151b76d778
+[0m14:54:46.827908 [debug] [Thread-3 (]: Finished running node test.bitcoin_anomaly_detection.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:54:46.829636 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:54:46.830211 [debug] [MainThread]: Connection 'list_bitcoin-anomaly-portfolio_dbt_bitcoin' was properly closed.
+[0m14:54:46.830690 [debug] [MainThread]: Connection 'test.bitcoin_anomaly_detection.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m14:54:46.831142 [debug] [MainThread]: Connection 'test.bitcoin_anomaly_detection.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+[0m14:54:46.831614 [debug] [MainThread]: Connection 'test.bitcoin_anomaly_detection.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m14:54:46.832064 [debug] [MainThread]: Connection 'test.bitcoin_anomaly_detection.not_null_my_first_dbt_model_id.5fb22c2710' was properly closed.
+[0m14:54:46.835204 [debug] [MainThread]: Command end result
+[0m14:54:47.012100 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:54:47.018090 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:54:47.031883 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\run_results.json
+[0m14:54:47.037982 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m14:54:47.038548 [info ] [MainThread]: Building catalog
+[0m14:54:47.047138 [debug] [ThreadPool]: Acquiring new bigquery connection 'bigquery-public-data.information_schema'
+[0m14:54:47.067877 [debug] [ThreadPool]: Acquiring new bigquery connection 'bitcoin-anomaly-portfolio.information_schema'
+[0m14:54:47.086132 [debug] [ThreadPool]: On bigquery-public-data.information_schema: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "connection_name": "bigquery-public-data.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `bigquery-public-data`.`crypto_bitcoin`.__TABLES__ tables
+    left join `bigquery-public-data`.`crypto_bitcoin`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `bigquery-public-data`.`crypto_bitcoin`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('crypto_bitcoin')
+                            and upper(table_name) = upper('transactions')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `bigquery-public-data`.`crypto_bitcoin`.INFORMATION_SCHEMA.COLUMNS columns
+    join `bigquery-public-data`.`crypto_bitcoin`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m14:54:47.091778 [debug] [ThreadPool]: On bitcoin-anomaly-portfolio.information_schema: /* {"app": "dbt", "dbt_version": "1.11.0rc3", "profile_name": "bitcoin_anomaly_detection", "target_name": "dev", "connection_name": "bitcoin-anomaly-portfolio.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.__TABLES__ tables
+    left join `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('dbt_bitcoin')
+                            and upper(table_name) = upper('fct_transaction_features')
+                            ) or (
+                                upper(table_schema) = upper('dbt_bitcoin')
+                            and upper(table_name) = upper('stg_transactions')
+                            ) or (
+                                upper(table_schema) = upper('dbt_bitcoin')
+                            and upper(table_name) = upper('my_second_dbt_model')
+                            ) or (
+                                upper(table_schema) = upper('dbt_bitcoin')
+                            and upper(table_name) = upper('my_first_dbt_model')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.INFORMATION_SCHEMA.COLUMNS columns
+    join `bitcoin-anomaly-portfolio`.`dbt_bitcoin`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m14:54:47.093294 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:54:47.094299 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:55:08.820999 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:897adc0e-aaa3-4c9c-a5db-5e911d0a1bf4&page=queryresults
+[0m14:55:08.826170 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=bitcoin-anomaly-portfolio&j=bq:US:6af54cac-7232-4135-b0a3-56a92971d1ca&page=queryresults
+[0m14:55:10.750909 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:55:10.779170 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\catalog.json
+[0m14:55:10.830492 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\manifest.json
+[0m14:55:10.836177 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\semantic_manifest.json
+[0m14:55:10.836888 [info ] [MainThread]: Catalog written to C:\Users\Microsoft\Desktop\Projects\Python Projects\Deteccao-de-Anomalias-em-Transacoes-de-Cripto\bitcoin_anomaly_detection\target\catalog.json
+[0m14:55:10.839033 [debug] [MainThread]: Command `dbt docs generate` succeeded at 14:55:10.838783 after 86.50 seconds
+[0m14:55:10.839633 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m14:55:10.840203 [debug] [MainThread]: Connection 'bigquery-public-data.information_schema' was properly closed.
+[0m14:55:10.840809 [debug] [MainThread]: Connection 'bitcoin-anomaly-portfolio.information_schema' was properly closed.
+[0m14:55:10.841569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026CB1D50D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026CC8CB9650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026CC8CB99C0>]}
+[0m14:55:10.842463 [debug] [MainThread]: Flushing usage events
+[0m14:55:11.518773 [debug] [MainThread]: An error was encountered while trying to flush usage events

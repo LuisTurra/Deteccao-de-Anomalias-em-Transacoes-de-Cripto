@@ -48,7 +48,7 @@ Stack 100% Google Cloud gratuito (Sandbox):
 
 ## Autor
 
-Luis Turra
+Seu Nome  
 LinkedIn | GitHub
 
-Projeto construído em dezembro 2025 para portfólio Cientista de Dados.
+Projeto construído em dezembro 2025 para portfólio Data Engineer / Analytics Engineer.
