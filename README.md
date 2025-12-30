@@ -9,14 +9,14 @@ Projeto de portfólio para detecção de **transações suspeitas** (possíveis 
 
 Stack 100% Google Cloud gratuito (Sandbox):
 - **dbt Core**: Transformação e feature engineering
-- **BigQuery**: Queries SQL + detecção rule-based (devido a limitações de storage no Sandbox)
+- **BigQuery**: Queries SQL + detecção rule-based 
 - **Looker Studio**: Dashboard interativo com alertas visuais
 
 **Objetivo**: Identificar padrões de fraude/privacidade como mixing services (ex: CoinJoin, peeling chains) em transações de 2025.
 
 **Live Dashboard**: [Link do seu Looker Studio aqui]
 
-**dbt Documentation**: [Link do GitHub Pages aqui]
+**dbt Documentation**: (https://luisturra.github.io/Deteccao-de-Anomalias-em-Transacoes-de-Cripto/#!/overview)
 
 ## Arquitetura
 
@@ -37,7 +37,7 @@ Stack 100% Google Cloud gratuito (Sandbox):
 - Detecta transações com >95th percentile de inputs/outputs (mixing)
 - Alto valor (>99th percentile)
 - Fees desproporcionais
-- Exemplos reais: Transações semelhantes a serviços como Whirlpool ou CoinJoin (2025)
+
 
 ## Tecnologias Usadas
 
@@ -48,7 +48,7 @@ Stack 100% Google Cloud gratuito (Sandbox):
 
 ## Autor
 
-Seu Nome  
+Luis Herique Turra Ramos  
 LinkedIn | GitHub
 
-Projeto construído em dezembro 2025 para portfólio Data Engineer / Analytics Engineer.
+Projeto construído em dezembro 2025 para portfólio Cientista de Dados.
