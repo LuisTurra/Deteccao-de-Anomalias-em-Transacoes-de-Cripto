@@ -3,7 +3,7 @@ name: Deploy dbt Docs to GitHub Pages
 on:
   push:
     branches:
-      - main  # Roda toda vez que der push no main
+      - main
 
 permissions:
   contents: read
@@ -26,13 +26,10 @@ jobs:
         run: |
           pip install dbt-core dbt-bigquery
 
-      - name: Generate dbt docs
-        env:
-          # Usa autenticação OAuth (funciona pro Sandbox sem secrets extras)
-          GOOGLE_APPLICATION_CREDENTIALS: none
-        run: dbt docs generate
+      - name: Generate dbt docs (static, sem precisar conectar ao BigQuery)
+        run: dbt docs generate --static
 
-      - name: Add .nojekyll (bypass Jekyll errors)
+      - name: Add .nojekyll (evita erro de Jekyll/SCSS)
         run: touch target/.nojekyll
 
       - name: Upload artifact
