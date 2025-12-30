@@ -1,0 +1,72 @@
+# dbt
+# target/
+dbt_packages/
+logs/
+*.log
+
+# dbt docs 
+# target/  
+# target/index.html
+# target/manifest.json
+# target/catalog.json
+# target/run_results.json
+# target/graph.gpickle
+
+# Profiles dbt 
+profiles.yml
+
+# Arquivos de ambiente e segredos
+.env
+*.env
+.env.local
+
+# Python local (se você usa scripts Python auxiliares)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis
+.pytest_cache
+
+# IDEs e editores
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# BigQuery / GCP local
+*.json  # service account keys (nunca commite!)
+*.pem
+*.key
+
+# Outros comuns em projetos de data
+*.csv
+*.parquet
+*.xlsx
+*.zip
+data/
+raw_data/

@@ -1,0 +1,29 @@
+[0m14:07:41.704914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027043D4ECF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027045ED7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027045ED7C50>]}
+
+
+============================== 14:07:41.713537 | 5ea69763-4681-487d-a70f-cfbf73cad1a0 ==============================
+[0m14:07:41.713537 [info ] [MainThread]: Running with dbt=1.11.0-rc3
+[0m14:07:41.714569 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'profiles_dir': 'C:\\Users\\Microsoft\\.dbt', 'invocation_command': 'dbt init bitcoin_anomaly_detection', 'write_json': 'True', 'no_print': 'None', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m14:07:41.770213 [debug] [MainThread]: Starter project path: C:\Users\Microsoft\anaconda3\Lib\site-packages\dbt\include\starter_project
+[0m14:07:41.810399 [info ] [MainThread]: 
+Your new dbt project "bitcoin_anomaly_detection" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:07:41.811216 [info ] [MainThread]: Setting up your profile.
+[0m14:09:41.762446 [info ] [MainThread]: Profile bitcoin_anomaly_detection written to C:\Users\Microsoft\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:09:41.769119 [debug] [MainThread]: Command `dbt init` succeeded at 14:09:41.766501 after 120.30 seconds
+[0m14:09:41.769902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002705573C510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002705B6EB530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027043B8A360>]}
+[0m14:09:41.771312 [debug] [MainThread]: Flushing usage events
+[0m14:09:42.465784 [debug] [MainThread]: An error was encountered while trying to flush usage events
