@@ -1,7 +1,5 @@
 # Detecção de Anomalias em Transações Bitcoin
 
-![BigQuery + dbt + Looker Studio](https://via.placeholder.com/800x400?text=Bitcoin+Anomaly+Detection+Pipeline)  
-*(Substitua por screenshot do seu dashboard)*
 
 ## Descrição do Projeto
 
@@ -10,11 +8,9 @@ Projeto de portfólio para detecção de **transações suspeitas** (possíveis 
 Stack 100% Google Cloud gratuito (Sandbox):
 - **dbt Core**: Transformação e feature engineering
 - **BigQuery**: Queries SQL + detecção rule-based 
-- **Looker Studio**: Dashboard interativo com alertas visuais
+
 
 **Objetivo**: Identificar padrões de fraude/privacidade como mixing services (ex: CoinJoin, peeling chains) em transações de 2025.
-
-**Live Dashboard**: [Link do seu Looker Studio aqui]
 
 **dbt Documentation**: (https://luisturra.github.io/Deteccao-de-Anomalias-em-Transacoes-de-Cripto/#!/overview)
 
@@ -43,7 +39,6 @@ Stack 100% Google Cloud gratuito (Sandbox):
 
 - Google BigQuery (Sandbox)
 - dbt Core
-- Looker Studio
 - GitHub + GitHub Pages (docs)
 
 ## Autor
