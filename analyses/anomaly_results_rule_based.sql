@@ -26,7 +26,7 @@ features AS (
     is_high_io,
     is_coinbase
   FROM `bitcoin-anomaly-portfolio.dbt_bitcoin.fct_transaction_features`
-  WHERE transaction_date >= '2025-01-01'  -- Anomalias em 2025 (ou ajuste para período que quiser)
+  WHERE transaction_date >= '2025-01-01'  
 )
 
 SELECT

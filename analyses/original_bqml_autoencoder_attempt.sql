@@ -1,5 +1,4 @@
--- analysis/original_bqml_autoencoder_attempt.sql
--- Tentativa inicial com Autoencoder (versão corrigida com l1_reg_activation)
+--  Autoencoder
 
 CREATE OR REPLACE MODEL `bitcoin-anomaly-portfolio.dbt_bitcoin.anomaly_autoencoder`
 OPTIONS(

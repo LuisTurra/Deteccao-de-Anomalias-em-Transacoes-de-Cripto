@@ -1,4 +1,3 @@
--- models/staging/stg_transactions.sql
 {{ config(materialized='view') }}  
 
 WITH base AS (
@@ -10,7 +9,7 @@ WITH base AS (
     block_timestamp,
     DATE(block_timestamp) AS transaction_date,
 
-    -- Valores em BTC (convertendo de satoshis)
+    -- Valores em BTC 
     SAFE_DIVIDE(input_value, 100000000) AS input_btc,
     SAFE_DIVIDE(output_value, 100000000) AS output_btc,
     SAFE_DIVIDE(fee, 100000000) AS fee_btc,
@@ -25,7 +24,6 @@ WITH base AS (
   FROM {{ source('crypto_bitcoin', 'transactions') }}
 
   -- Filtra dados recentes para queries baratas e evitar limites do Sandbox
-  -- Ajuste a data se quiser mais/menos histórico (ex: '2023-01-01' para mais recente)
   WHERE block_timestamp >= '2022-01-01'
 )
 

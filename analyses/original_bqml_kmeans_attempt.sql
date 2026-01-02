@@ -1,5 +1,4 @@
--- analysis/original_bqml_kmeans_attempt.sql
--- Tentativa de anomaly detection com K-Means (leve e bom para clustering)
+-- Tentativa de anomaly detection com K-Means
 
 CREATE OR REPLACE MODEL `bitcoin-anomaly-portfolio.dbt_bitcoin.anomaly_kmeans`
 OPTIONS(
